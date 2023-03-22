@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<!-- PUT LEGAL API LEGAL INFO AT BOTTOM OF HOMEPAGE -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <link
+      rel="icon"     href="https://www.citypng.com/public/uploads/small/11663776709l135wxq2xwf7ehkjuf6fbf67hnuxjibg8rfmbrj5vwbcbukkugpvdrnbbae8dq7jxk5riucxywxdq5gdmepe8gvm00jntrnrnq7e.png"
+    />
+
+    <title>Project Movie and TV Shows</title>
+
+    <!-- Import the webpage's stylesheet -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- Import the webpage's javascript file -->
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.0/papaparse.min.js"></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <img
+        id="logo"
+        src="https://www.citypng.com/public/uploads/small/11663776709l135wxq2xwf7ehkjuf6fbf67hnuxjibg8rfmbrj5vwbcbukkugpvdrnbbae8dq7jxk5riucxywxdq5gdmepe8gvm00jntrnrnq7e.png"
+        alt=""
+        width="auto"
+        hieght="50"
+      />
+      <input
+        type="text"
+        class="searchbar"
+        id="search_bar"
+        placeholder="Search for Movies or TV Shows..."
+      />
+      <input
+        type="button"
+        id="search_button"
+        onclick="storeItem()"
+        value="Search"
+      />
+    </header>
+
+    <div class="container">
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >New Releases</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Categories</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >All Movies [&] TV Shows</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search for Movies for TV Shows..."
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="new_releases">
+      <h1 class="new_releases_title"><a href="new.html">New Releases</a></h1>
+      <div class="container text-centered">
+        <div class="row align-items-start">
+          <div class="col">
+            <figure class="figure">
+              <img
+                src="https://png.pngtree.com/background/20210715/original/pngtree-double-row-tree-path-with-yellow-deciduous-autumn-leaves-picture-image_1293368.jpg"
+                class="figure-img img-fluid rounded"
+                alt="pic1"
+                id="pic1"
+                data-identifier=""
+                onclick="clickedImage(id)"
+              />
+            </figure>
+          </div>
+          <div class="col">
+            <figure class="figure">
+              <img
+                src="https://png.pngtree.com/background/20210715/original/pngtree-double-row-tree-path-with-yellow-deciduous-autumn-leaves-picture-image_1293368.jpg"
+                class="figure-img img-fluid rounded"
+                alt="pic1"
+                id="pic2"
+                data-identifier=""
+                onclick="clickedImage(id)"
+              />
+            </figure>
+          </div>
+          <div class="col">
+            <figure class="figure">
+              <img
+                src="https://png.pngtree.com/background/20210715/original/pngtree-double-row-tree-path-with-yellow-deciduous-autumn-leaves-picture-image_1293368.jpg"
+                class="figure-img img-fluid rounded"
+                alt="pic1"
+                id="pic3"
+                data-identifier=""
+                onclick="clickedImage(id)"
+              />
+            </figure>
+          </div>
+          <div class="col">
+            <figure class="figure">
+              <img
+                src="https://png.pngtree.com/background/20210715/original/pngtree-double-row-tree-path-with-yellow-deciduous-autumn-leaves-picture-image_1293368.jpg"
+                class="figure-img img-fluid rounded"
+                alt="pic1"
+                id="pic4"
+                data-identifier=""
+                onclick="clickedImage(id)"
+              />
+            </figure>
+          </div>
+          <div class="col">
+            <figure class="figure">
+              <img
+                src="https://png.pngtree.com/background/20210715/original/pngtree-double-row-tree-path-with-yellow-deciduous-autumn-leaves-picture-image_1293368.jpg"
+                class="figure-img img-fluid rounded"
+                alt="pic1"
+                id="pic5"
+                data-identifier=""
+                onclick="clickedImage(id)"
+              />
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="classics">
+      <h1 class="classics_title"><a href="classics.html">Classics</a></h1>
+      <div class="container text-centered">
+        <div class="row align-items-start">
+          <div class="col">
+            <figure class="figure">
+              <img
+                src="https://m.media-amazon.com/images/M/MV5BMDA0NjZhZWUtNmI2NC00MmFjLTgwZDYtYzVjZmNhMDVmOTBkXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg"
+                class="figure-img img-fluid rounded"
+                alt="pic1"
+                id="pic6"
+                data-identifier="Ferris Bueller's Day Off"
+                onclick="clickedImage(id)"
+              />
+              <figcaption class="figure-caption"></figcaption>
+            </figure>
+          </div>
+          <div class="col">
+            <figure class="figure">
+              <img
+                src="https://m.media-amazon.com/images/M/MV5BOWExYjI5MzktNTRhNi00Nzg2LThkZmQtYWVkYjRlYWI2MDQ4XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_.jpg"
+                class="figure-img img-fluid rounded"
+                alt="TheMask"
+                id="pic7"
+                data-identifier="The Mask"
+                onclick="clickedImage(id)"
+              />
+              <figcaption class="figure-caption"></figcaption>
+            </figure>
+          </div>
+          <div class="col">
+            <figure class="figure">
+              <img
+                src="https://i.ebayimg.com/images/g/kWQAAOSwArteJsIw/s-l500.jpg"
+                class="figure-img img-fluid rounded"
+                alt="pic1"
+                id="pic8"
+                data-identifier="The Godfather"
+                onclick="clickedImage(id)"
+              />
+              <figcaption class="figure-caption"></figcaption>
+            </figure>
+          </div>
+          <div class="col">
+            <figure class="figure">
+              <img
+                src="https://m.media-amazon.com/images/M/MV5BNTQwNDM1YzItNDAxZC00NWY2LTk0M2UtNDIwNWI5OGUyNWUxXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg"
+                class="figure-img img-fluid rounded"
+                alt="pic1"
+                id="pic9"
+                data-identifier="Psycho"
+                onclick="clickedImage(id)"
+              />
+              <figcaption class="figure-caption"></figcaption>
+            </figure>
+          </div>
+          <div class="col">
+            <figure class="figure">
+              <img
+                src="https://c8.alamy.com/comp/E5N4GR/star-wars-aka-star-wars-episode-iv-a-new-hope-from-left-peter-cushing-E5N4GR.jpg"
+                class="figure-img img-fluid rounded"
+                alt="pic1"
+                id="pic10"
+                data-identifier="Star Wars"
+                onclick="clickedImage(id)"
+              />
+              <figcaption class="figure-caption"></figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a href="description.html">Test page for movie descriptions.</a>
+    <footer class="footer"></footer>
+    <script src="/script.js"></script>
+  </body>
+</html>

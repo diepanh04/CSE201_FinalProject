@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!-- PUT LEGAL API LEGAL INFO AT BOTTOM OF HOMEPAGE -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <link
+      rel="icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLeFLd86FtpZnr8N1D8y5ksrgxyNkZRP_RGQ&usqp=CAU"
+    />
+
+    <title>Project Movie and TV Shows</title>
+
+    <!-- Import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+    <style>
+      .first-column {
+        width: 66%;
+        padding: 0 10px 0 0;
+        float: left;
+      }
+
+      .second-column {
+        width: 33%;
+        padding: 0 10px 0 0;
+        float: right;
+        background-color: white;
+        height: 100%;
+      }
+      #movie_description {
+        color: white;
+      }
+      .menu {
+        color: black;
+        height: 100%;
+      }
+    </style>
+
+    <!-- Import the webpage's javascript file -->
+  </head>
+  <body onload="searchbar_search()">
+    <header class="header">
+      <img
+        id="logo2"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLeFLd86FtpZnr8N1D8y5ksrgxyNkZRP_RGQ&usqp=CAU"
+        alt=""
+        width="40px"
+        height="40px"
+      />
+      <input
+        type="text"
+        class="searchbar"
+        id="search_bar2"
+        placeholder="Search for Movies or TV Shows..."
+      />
+      <input
+        type="button"
+        id="search_button2"
+        onclick="searchbar_search()"
+        value="Search"
+      />
+    </header>
+    <div class="first-column">
+      <img
+        id="movie_poster"
+        src="https://cdn.dribbble.com/users/108183/screenshots/14420202/042_processing_animation_2_9_4x.gif?compress=1&resize=400x300"
+        alt="Movie poster"
+      />
+      <p id="movie_title">Movie Title Here</p>
+      <p id="movie_description">
+        This is the movie description. I am using random text to demonstrate the
+        actual proportions of each section of this page. The format will be
+        similar to IMDb, with a large section on the left for main movie
+        content, and a smaller column on the right.
+      </p>
+    </div>
+    <div class="second-column">
+      <p class="menu">
+        This is the navigation content! This extends all the way up and down the
+        page, unlike the movie sections, which will have different chunks.
+      </p>
+    </div>
+    <footer class="footer"></footer>
+    <script src="/description.js"></script>
+  </body>
+</html>

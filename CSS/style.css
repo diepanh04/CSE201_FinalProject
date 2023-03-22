@@ -1,0 +1,66 @@
+h1 {
+  color: red;
+}
+
+body {
+  background-color: rgb(40, 40, 40);
+  font-family: Gill Sans,Gill Sans MT,Calibri,sans-serif; 
+}
+
+::placeholder {
+  color: gray;
+}
+
+.searchbar {
+  color: white;
+  background-color: black;
+  border-radius: 30px;
+  border-color: black;
+  align-items: center;
+  width: 900px;
+  height: 40px; 
+  font-size: 20px;
+  padding-left: 15px;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  height: 60px;
+  padding-top: 5px;
+}
+.new_releases_title{
+  color: white;
+  padding: 10px;
+}
+.container {
+  color: white;
+}
+.figure-caption {
+  color: white;
+}
+
+.classics_title{
+  color:white;
+  padding: 10px;
+}
+#logo{
+  : left;
+}
+#movie_title{
+  color : white;
+}
+
+b {
+  color : rgb(255, 192, 0);
+  padding : 25px;
+  font-size : 41px;
+}
+
+a {
+  color : white;
+  text-decoration: none;
+  
+}
+a:hover {
+  color: red;
+}
