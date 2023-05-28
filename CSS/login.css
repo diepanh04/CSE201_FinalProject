@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: rgb(40, 40, 40);
+}
+
+.login-card {
+  margin: 100px auto;
+  width: 500px;
+  background: rgb(250, 192, 67);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 0px #000;
+}
+
+.new_title {
+  margin: 0px 0px 20px 0px;
+  font-size: 40px;
+  text-align: center;
+  color: rgb(40, 40, 40);
+  text-shadow: 2px 2px 2px #ccc;
+}
+
+.signup-link {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login-form label {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
+  width: 95%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.login-form input[type="button"] {
+  background: rgb(40, 40, 40);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: background 0.3s ease-in-out;
+}
+
+.login-form input[type="button"]:hover {
+  background: #148f77;
+}
+
+.home-link {
+  display: block;
+  text-align: center;
+  color: #666;
+  margin-top: 20px;
+}

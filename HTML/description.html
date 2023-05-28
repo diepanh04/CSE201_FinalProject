@@ -8,79 +8,144 @@
       rel="icon"
       href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLeFLd86FtpZnr8N1D8y5ksrgxyNkZRP_RGQ&usqp=CAU"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
 
     <title>Project Movie and TV Shows</title>
 
     <!-- Import the webpage's stylesheet -->
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="style.css" />
     <style>
       .first-column {
-        width: 66%;
-        padding: 0 10px 0 0;
+        width: 55%;
+        padding-left: 20px;
         float: left;
       }
 
       .second-column {
-        width: 33%;
+        width: 45%;
         padding: 0 10px 0 0;
         float: right;
-        background-color: white;
+        color: white;
         height: 100%;
       }
       #movie_description {
         color: white;
+        font-size: 25px;
+        padding-left: 15px;
+        padding-right:5px;
       }
+      #movie_title {
+        font-size: 60px;
+        padding-left: 15px;
+        padding-top:10px;
+      }
+
       .menu {
         color: black;
         height: 100%;
+      }
+      #release_date {
+        color: white;
+        font-size: 30px;
+        padding-left: 15px;
+      }
+      #movie_poster{
+        padding-left:80px;
+        padding-top:10px;
+        height:625px;
       }
     </style>
 
     <!-- Import the webpage's javascript file -->
   </head>
-  <body onload="searchbar_search()">
-    <header class="header">
-      <img
-        id="logo2"
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLeFLd86FtpZnr8N1D8y5ksrgxyNkZRP_RGQ&usqp=CAU"
-        alt=""
-        width="40px"
-        height="40px"
-      />
-      <input
-        type="text"
-        class="searchbar"
-        id="search_bar2"
-        placeholder="Search for Movies or TV Shows..."
-      />
-      <input
-        type="button"
-        id="search_button2"
-        onclick="searchbar_search()"
-        value="Search"
-      />
+  <body>
+    <header>
+      <a href="index.html"
+        ><img
+          src="https://www.citypng.com/public/uploads/small/11663776709l135wxq2xwf7ehkjuf6fbf67hnuxjibg8rfmbrj5vwbcbukkugpvdrnbbae8dq7jxk5riucxywxdq5gdmepe8gvm00jntrnrnq7e.png"
+          id="logo"
+          style="width: 15%"
+          align="right"
+      /></a>
     </header>
     <div class="first-column">
-      <img
-        id="movie_poster"
-        src="https://cdn.dribbble.com/users/108183/screenshots/14420202/042_processing_animation_2_9_4x.gif?compress=1&resize=400x300"
-        alt="Movie poster"
-      />
-      <p id="movie_title">Movie Title Here</p>
+      <h1 id="movie_title">Movie Title Here</h1>
+      <p id="release_date">This is where the release date info goes.</p>
       <p id="movie_description">
         This is the movie description. I am using random text to demonstrate the
         actual proportions of each section of this page. The format will be
         similar to IMDb, with a large section on the left for main movie
         content, and a smaller column on the right.
       </p>
+      
+      <!-- Rating Stuff -->
+      
+      <div id="displayRating" style="color: white; font-size: 25px; padding-left: 15px; padding-right:5px;"></div>
+      <div id="ratingForm" style="color: white; font-size: 25px; padding-left: 15px; padding-right:5px;">
+        <form>
+          <label for="rating" style="color:white;">Rating (between 1 and 5):</label>
+          <input type="number" id="rating" name="rating" min="1" max="5" value="3">
+          <input type="button" id="rate" value="Rate">
+        </form>
+      </div>
+      
+      <button
+        type="button"
+        class="btn btn-warning btn-small"
+        id="saveButton"
+        style="display: none"
+      >
+        Save to WatchList
+      </button>
+      <button
+        type="button"
+        class="btn btn-success btn-small"
+        id="saved"
+        style="display: none"
+      >
+        Saved to WatchList
+      </button>
+      <button
+        type="button"
+        class="btn btn-warning btn-small"
+        id="bookmarkButton"
+        style="display: none"
+      >
+        Bookmark
+      </button>
+      <button
+        type="button"
+        class="btn btn-success btn-small"
+        id="bookmarked"
+        style="display: none"
+      >
+        Bookmarked
+      </button>
+      
     </div>
+    
     <div class="second-column">
-      <p class="menu">
-        This is the navigation content! This extends all the way up and down the
-        page, unlike the movie sections, which will have different chunks.
-      </p>
+      <img
+        id="movie_poster"
+        src="https://cdn.dribbble.com/users/108183/screenshots/14420202/042_processing_animation_2_9_4x.gif?compress=1&resize=400x300"
+        alt="Movie poster"
+      />
     </div>
-    <footer class="footer"></footer>
-    <script src="/description.js"></script>
+
+    <button
+      type="button"
+      href="index.html"
+      class="btn btn-success btn-small"
+      style="display: none"
+    >
+      Go back to home
+    </button>
+    
+    <script type="module" src="description.js"></script>
   </body>
 </html>

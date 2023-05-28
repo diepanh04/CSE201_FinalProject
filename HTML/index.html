@@ -5,7 +5,8 @@
     <meta charset="utf-8" />
 
     <link
-      rel="icon"     href="https://www.citypng.com/public/uploads/small/11663776709l135wxq2xwf7ehkjuf6fbf67hnuxjibg8rfmbrj5vwbcbukkugpvdrnbbae8dq7jxk5riucxywxdq5gdmepe8gvm00jntrnrnq7e.png"
+      rel="icon"
+      href="https://www.citypng.com/public/uploads/small/11663776709l135wxq2xwf7ehkjuf6fbf67hnuxjibg8rfmbrj5vwbcbukkugpvdrnbbae8dq7jxk5riucxywxdq5gdmepe8gvm00jntrnrnq7e.png"
     />
 
     <title>Project Movie and TV Shows</title>
@@ -17,101 +18,75 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="/style.css" />
-
-    <!-- Import the webpage's javascript file -->
-    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.0/papaparse.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <header class="header">
+    <header class="header" id="header">
       <img
         id="logo"
         src="https://www.citypng.com/public/uploads/small/11663776709l135wxq2xwf7ehkjuf6fbf67hnuxjibg8rfmbrj5vwbcbukkugpvdrnbbae8dq7jxk5riucxywxdq5gdmepe8gvm00jntrnrnq7e.png"
         alt=""
         width="auto"
-        hieght="50"
+        hieght="60"
       />
-      <input
-        type="text"
-        class="searchbar"
-        id="search_bar"
-        placeholder="Search for Movies or TV Shows..."
-      />
-      <input
-        type="button"
-        id="search_button"
-        onclick="storeItem()"
-        value="Search"
-      />
+      <div class="center">
+        <input
+          type="text"
+          class="searchbar"
+          id="search_bar"
+          placeholder="Search for Movies..."
+        />
+        <input
+          type="button"
+          id="search_button"
+          onclick="storeItem()"
+          value="Search"
+          margin="5px"
+        />
+        <button id="login" onclick="window.location.href='/login.html';">
+          Login
+        </button>
+        <button id="logout" onclick="logout()">Logout</button>
+      </div>
     </header>
 
-    <div class="container">
-      <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
-                  >New Releases</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
-                  >Categories</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
-                  >All Movies [&] TV Shows</a
-                >
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search for Movies for TV Shows..."
-                aria-label="Search"
-              />
-              <button class="btn btn-outline-success" type="submit">
-                Search
-              </button>
-            </form>
+    <div class="container1">
+      <div class="center">
+        <div class="dropdown">
+          <button class="dropbtn">Genres</button>
+          <div class="dropdown-content">
+            <a href="/genres.html" onclick="setGenre('Action')">Action</a>
+            <a href="/genres.html" onclick="setGenre('Adventure')">Adventure</a>
+            <a href="/genres.html" onclick="setGenre('Animation')">Animation</a>
+            <a href="/genres.html" onclick="setGenre('Comedy')">Comedy</a>
+            <a href="/genres.html" onclick="setGenre('Documentary')"
+              >Documentary</a
+            >
+            <a href="/genres.html" onclick="setGenre('Drama')">Drama</a>
+            <a href="/genres.html" onclick="setGenre('Family')">Family</a>
+            <a href="/genres.html" onclick="setGenre('Fantasy')">Fantasy</a>
+            <a href="/genres.html" onclick="setGenre('History')">History</a>
+            <a href="/genres.html" onclick="setGenre('Horror')">Horror</a>
+            <a href="/genres.html" onclick="setGenre('Music')">Music</a>
+            <a href="/genres.html" onclick="setGenre('Mystery')">Mystery</a>
+            <a href="/genres.html" onclick="setGenre('Romance')">Romance</a>
+            <a href="/genres.html" onclick="setGenre('Science Fiction')"
+              >Science Fiction</a
+            >
+            <a href="/genres.html" onclick="setGenre('Thriller')">Thriller</a>
           </div>
         </div>
-      </nav>
+        <button
+          id="watchlist"
+          onclick="window.location.href='/watchlist.html';"
+        >
+          Watchlist
+        </button>
+        <button id="bookmark" onclick="window.location.href='/bookmark.html';">
+          Bookmarks
+        </button>
+      </div>
     </div>
 
     <div class="new_releases">
@@ -126,6 +101,7 @@
                 alt="pic1"
                 id="pic1"
                 data-identifier=""
+                data-id=""
                 onclick="clickedImage(id)"
               />
             </figure>
@@ -138,6 +114,7 @@
                 alt="pic1"
                 id="pic2"
                 data-identifier=""
+                data-id=""
                 onclick="clickedImage(id)"
               />
             </figure>
@@ -150,6 +127,7 @@
                 alt="pic1"
                 id="pic3"
                 data-identifier=""
+                data-id=""
                 onclick="clickedImage(id)"
               />
             </figure>
@@ -162,6 +140,7 @@
                 alt="pic1"
                 id="pic4"
                 data-identifier=""
+                data-id=""
                 onclick="clickedImage(id)"
               />
             </figure>
@@ -174,6 +153,7 @@
                 alt="pic1"
                 id="pic5"
                 data-identifier=""
+                data-id=""
                 onclick="clickedImage(id)"
               />
             </figure>
@@ -194,9 +174,9 @@
                 alt="pic1"
                 id="pic6"
                 data-identifier="Ferris Bueller's Day Off"
+                data-id="9377"
                 onclick="clickedImage(id)"
               />
-              <figcaption class="figure-caption"></figcaption>
             </figure>
           </div>
           <div class="col">
@@ -207,9 +187,9 @@
                 alt="TheMask"
                 id="pic7"
                 data-identifier="The Mask"
+                data-id="854"
                 onclick="clickedImage(id)"
               />
-              <figcaption class="figure-caption"></figcaption>
             </figure>
           </div>
           <div class="col">
@@ -220,9 +200,9 @@
                 alt="pic1"
                 id="pic8"
                 data-identifier="The Godfather"
+                data-id="238"
                 onclick="clickedImage(id)"
               />
-              <figcaption class="figure-caption"></figcaption>
             </figure>
           </div>
           <div class="col">
@@ -233,9 +213,9 @@
                 alt="pic1"
                 id="pic9"
                 data-identifier="Psycho"
+                data-id="539"
                 onclick="clickedImage(id)"
               />
-              <figcaption class="figure-caption"></figcaption>
             </figure>
           </div>
           <div class="col">
@@ -246,17 +226,23 @@
                 alt="pic1"
                 id="pic10"
                 data-identifier="Star Wars"
+                data-id="11"
                 onclick="clickedImage(id)"
               />
-              <figcaption class="figure-caption"></figcaption>
             </figure>
           </div>
         </div>
       </div>
     </div>
-
-    <a href="description.html">Test page for movie descriptions.</a>
-    <footer class="footer"></footer>
-    <script src="/script.js"></script>
+    
+      <h6 style="color: white; margin-left: 43%;">Copyright 2023, CSE 201 Team 4</h6>
+      <img
+        src="https://www.themoviedb.org/assets/2/v4/logos/v2/blue_short-8e7b30f73a4020692ccca9c88bafe5dcb6f8a62a4c6bc55cd9ba82bb2cd95f6c.svg"
+        alt="TMDB logo"
+        id="tmdb_logo"
+        style="height: 30px; margin-left: 43%; margin-bottom: 10px;"
+      />
+    
   </body>
+  <script src="script.js"></script>
 </html>

@@ -4,7 +4,7 @@ h1 {
 
 body {
   background-color: rgb(40, 40, 40);
-  font-family: Gill Sans,Gill Sans MT,Calibri,sans-serif; 
+  font-family: Gill Sans, Gill Sans MT, Calibri, sans-serif;
 }
 
 ::placeholder {
@@ -18,9 +18,21 @@ body {
   border-color: black;
   align-items: center;
   width: 900px;
-  height: 40px; 
+  height: 50px;
   font-size: 20px;
   padding-left: 15px;
+}
+.searchbar:hover {
+  border-color: white;
+}
+#search_button {
+  background-color: black;
+  color: white;
+  border-radius: 0px;
+  border-radius: 30px;
+}
+#search_button:hover {
+  border-color: white;
 }
 .header {
   display: flex;
@@ -28,7 +40,7 @@ body {
   height: 60px;
   padding-top: 5px;
 }
-.new_releases_title{
+.new_releases_title {
   color: white;
   padding: 10px;
 }
@@ -39,28 +51,117 @@ body {
   color: white;
 }
 
-.classics_title{
-  color:white;
+.classics_title {
+  color: white;
   padding: 10px;
 }
-#logo{
-  : left;
+#logo {
+  text-align: left;
 }
-#movie_title{
-  color : white;
-}
-
-b {
-  color : rgb(255, 192, 0);
-  padding : 25px;
-  font-size : 41px;
+#movie_title {
+  color: white;
 }
 
 a {
-  color : white;
+  color: white;
   text-decoration: none;
-  
 }
 a:hover {
   color: red;
 }
+
+.dropbtn {
+  font-size: 16px;
+  padding: 14px;
+  color: rgb(255, 192, 0);
+  background-color: black;
+  border: 2px solid rgb(255, 192, 0);
+  margin: 7px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: black;
+  color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: black;
+  color: white;
+}
+
+b {
+  color: rgb(255, 192, 0);
+  padding: 20px;
+  font-size: 41px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75px;
+}
+
+button {
+  padding: 13px;
+  color: rgb(255, 192, 0);
+  background-color: black;
+  border: 2px solid rgb(255, 192, 0);
+  margin: 7px;
+}
+
+
+.search_divs {
+  padding-left: "200px";
+  border-radius: "50px";
+}
+.search_divs:hover {
+  box-shadow: 0 0 2px 2px white;
+}
+.search_info {
+  background-color: white;
+  height: 30px;
+}
+#pic1:hover,
+#pic2:hover,
+#pic3:hover,
+#pic4:hover,
+#pic5:hover,
+#pic6:hover,
+#pic7:hover,
+#pic8:hover,
+#pic9:hover,
+#pic10:hover {
+  box-shadow: 0 0 2px 2px white;
+}
+.tmdb_logo{
+  max-width:25%;
+  height:auto;
+  
+}
+

@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<!-- PUT LEGAL API LEGAL INFO AT BOTTOM OF HOMEPAGE -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link
+      rel="icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLeFLd86FtpZnr8N1D8y5ksrgxyNkZRP_RGQ&usqp=CAU"
+    />
+    <title>Classics Section</title>
+    <!-- Import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    
+    <!-- Horz scroll bar custom scrollbar and default scrollmenu-->
+    <style>
+      b1 {
+        font-size: 72px;
+      }
+
+      .outer-wrapper {
+        max-width: 100vw;
+        overflow-x: scroll;
+        position: relative;
+      }
+
+      .pseduo-track {
+        background-color: black;
+        height: 2px;
+        width: 100%;
+        position: fixed;
+        top: -3px;
+        z-index: -10;
+      }
+
+      .outer-wrapper::-webkit-scrollbar {
+        height: 40px;
+      }
+
+      .outer-wrapper::-webkit-scrollbar-track {
+        width: 100%;
+      }
+
+      .outer-wrapper::-webkit-scrollbar-thumb {
+        height: 5px;
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjwxoouxyW43hZZHbfmflIsDn8pWilVg_niQ&usqp=CAU");
+        background-position: left bottom;
+        background-repeat: repeat, repeat;
+        background-size: contain, contain;
+      }
+
+      .outer-wrapper::-webkit-scrollbar:vertical {
+        display: none;
+      }
+
+      a {
+        display: inline-block;
+        color: rgb(255, 192, 0);
+        text-align: center;
+        padding: 15px;
+        text-decoration: none;
+      }
+
+      a:hover {
+        background-color: rgb(255, 192, 0);
+      }
+      
+      .no-hover:hover {
+        background-color: rgb(40, 40, 40);
+      }
+
+      .inner-wrapper {
+        display: flex;
+      }
+    </style>
+
+    <!-- Import the webpage's javascript file -->
+    <script src="script.js"></script>
+  </head>
+
+  <header class="header" id="header">
+    <b1 class="classics_title">Classics Section</b1>
+    <a href="index.html" class="no-hover">
+        <img
+          src="https://www.citypng.com/public/uploads/small/11663776709l135wxq2xwf7ehkjuf6fbf67hnuxjibg8rfmbrj5vwbcbukkugpvdrnbbae8dq7jxk5riucxywxdq5gdmepe8gvm00jntrnrnq7e.png"
+          id="logo"
+          style="width: 35%"
+          align="right"
+      /></a>
+    
+  </header>
+  <br />
+<body>
+  
+  <div class="classics">
+    <br />
+    <div class="container text-centered">
+      <div class="row align-items-start">
+        <!-- 60s Movies -->
+        <b>60s Movies</b><br />
+        <div class="outer-wrapper">
+         <div class="inner-wrapper">
+          <a>
+            <img
+              src="https://m.media-amazon.com/images/I/51-w5-H7iuL._AC_UF894,1000_QL80_.jpg"
+              alt="MaryPoppins"
+              width="150"
+              height="225"
+              id="60classic1"
+              data-identifier="Mary Poppins"
+              data-id="433"
+              onclick="clickedImage(id)"
+          /></a>
+          <a>
+            <img
+              src="https://m.media-amazon.com/images/M/MV5BNTQwNDM1YzItNDAxZC00NWY2LTk0M2UtNDIwNWI5OGUyNWUxXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_.jpg"
+              alt="Psycho"
+              width="150"
+              height="225"
+              id="60classic2"
+              data-id="539"
+              data-identifier="Psycho"
+              onclick="clickedImage(id)"
+          /></a>
+          <a>
+            <img
+              src="https://m.media-amazon.com/images/I/51IVROvHQoL._AC_.jpg"
+              alt="GoodBadUgly"
+              width="150"
+              height="225"
+              id="60classic3"
+              data-id="429"
+              data-identifier="The Good, The Bad, And The Ugly"
+              onclick="clickedImage(id)"
+          /></a>
+          <a>
+            <img
+              src="https://m.media-amazon.com/images/I/512U8Tf66JL._AC_UF894,1000_QL80_.jpg"
+              alt="The Sound of Music"
+              width="150"
+              height="225"
+              id="60classic4"
+              data-id="15121"
+              data-identifier="Sound of Music"
+              onclick="clickedImage(id)"
+          /></a>
+          <a>
+            <img
+              src="https://i.ebayimg.com/images/g/BHsAAOSwAuNW7Xbj/s-l500.jpg"
+              alt="Magnificent7"
+              width="150"
+              height="225"
+              id="60classic5"
+              data-id="966"
+              data-identifier="The Magnificent 7"
+              onclick="clickedImage(id)"
+          /></a>
+          <a>
+            <img
+              src="https://m.media-amazon.com/images/I/51BiUOTb4jL._AC_UF894,1000_QL80_.jpg"
+              alt="ButchCassidy"
+              width="150"
+              height="225"
+              id="60classic6"
+              data-id="642"
+              data-identifier="Butch Cassidy"
+              onclick="clickedImage(id)"
+          /></a>
+          <a>
+            <img
+              src="https://cdn.shopify.com/s/files/1/1416/8662/products/to_kill_a_mockingbird_1963_linen_original_film_art_f_1200x.jpg?v=1573840983"
+              alt="Mockingbird"
+              width="150"
+              height="225"
+              id="60classic7"
+              data-id="595"
+              data-identifier="To Kill a Mockingbird"
+              onclick="clickedImage(id)"
+          /></a>
+          <a>
+            <img
+              src="https://image.tmdb.org/t/p/w500/jaZFWy6ZAvQoMW2mo9xP5gx4URo.jpg"
+              alt="Parent Trap"
+              width="150"
+              height="225"
+              id="60classic8"
+              data-id="19186"
+              data-identifier="The Parent Trap"
+              onclick="clickedImage(id)"
+          /></a>
+          <a>
+            <img
+              src="https://i.ebayimg.com/images/g/5iAAAOSwD9VjUFv7/s-l1600.jpg"
+              alt="Goldfinger"
+              width="150"
+              height="225"
+              id="60classic9"
+              data-id="658"
+              data-identifier="Goldfinger"
+              onclick="clickedImage(id)"
+          /></a>
+        </div>
+      </div>
+        <br />
+
+        <!-- 70s Movies -->
+        <b>70s Movies</b><br />
+        <div class="outer-wrapper">
+         <div class="inner-wrapper">
+          <a>
+            <img
+              src="https://i.ebayimg.com/images/g/kWQAAOSwArteJsIw/s-l500.jpg"
+              alt="Godfather"
+              width="150"
+              height="225"
+              id="70classic1"
+              data-id="238"
+              data-identifier="The Godfather"
+              onclick="clickedImage(id)"
+          /></a>
+          <a>
+            <img
+              src="https://cdn.shopify.com/s/files/1/1057/4964/products/Grease-Vintage-Movie-Poster-Original-1-Sheet-27x41-3739_600x.jpg?v=1632862805"
+              alt="Grease"
+              width="150"
+              height="225"
+              id="70classic2"
+              data-id="621"
+              data-identifier="Grease"
+              onclick="clickedImage(id)"
+          /></a>
+          <a>
+            <img
+              src="https://c8.alamy.com/comp/E5N4GR/star-wars-aka-star-wars-episode-iv-a-new-hope-from-left-peter-cushing-E5N4GR.jpg"
+              alt="NewHope"
+              width="150"
+              height="225"
+              id="70classic3"
+              data-id="11"
+              data-identifier="Star Wars"
+              onclick="clickedImage(id)"
+          /></a>
+          <a>
+            <img
+              src="https://cdn.shopify.com/s/files/1/1416/8662/products/rocky_1976_40x60_original_film_art_48aa4697-ba9d-4404-a39f-284b94e0cecd.jpg?v=1633548517"
+              alt="Rocky"
+              width="150"
+              height="225"
+              id="70classic4"
+              data-id="1366"
+              data-identifier="Rocky"
+              onclick="clickedImage(id)"
+          /></a>
+          <a>
+            <img
+              src="https://www.vintageadsandstuff.com/viewmovie70s10.jpeg"
+              alt="Alien"
+              width="150"
+              height="225"
+              id="70classic5"
+              data-id="348"
+              data-identifier="Alien"
+              onclick="clickedImage(id)"
+          /></a>
+          <a>
+            <img
+              src="https://m.media-amazon.com/images/M/MV5BMmVmODY1MzEtYTMwZC00MzNhLWFkNDMtZjAwM2EwODUxZTA5XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_FMjpg_UX1000_.jpg"
+              alt="Jaws"
+              width="150"
+              height="225"
+              id="70classic6"
+              data-id="578"
+              data-identifier="Jaws"
+              onclick="clickedImage(id)"
+          /></a>
+          <a>
+            <img
+              src="https://www.reelviews.net/resources/img/posters/thumbs/willy_wonka.jpg"
+              alt="WillyWonka"
+              width="150"
+              height="225"
+              id="70classic7"
+              data-id="252"
+              data-identifier="Willy Wonka"
+              onclick="clickedImage(id)"
+          /></a>
+          <a>
+            <img
+              src="https://cdn.shopify.com/s/files/1/1416/8662/products/superman_1978_english_1sh_original_film_art_819bb8e0-b10a-4a5c-ac68-95a2e1891564.jpg?v=1574207169"
+              alt="Superman"
+              width="150"
+              height="225"
+              id="70classic8"
+              data-id="1924"
+              data-identifier="Superman"
+              onclick="clickedImage(id)"
+          /></a>
+          <a>
+            <img
+              src="https://m.media-amazon.com/images/M/MV5BN2IyNTE4YzUtZWU0Mi00MGIwLTgyMmQtMzQ4YzQxYWNlYWE2XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_.jpg"
+              alt="MPaHG"
+              width="150"
+              height="225"
+              id="70classic9"
+              data-id="762"
+              data-identifier="Monty Python"
+              onclick="clickedImage(id)"
+          /></a>
+          <a>
+            <img
+              src="https://m.media-amazon.com/images/M/MV5BNzk1OGU2NmMtNTdhZC00NjdlLWE5YTMtZTQ0MGExZTQzOGQyXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg"
+              alt="Halloween"
+              width="150"
+              height="225"
+              id="70classic10"
+              data-id="948"
+              data-identifier="Halloween"
+              onclick="clickedImage(id)"
+          /></a>
+           <a>
+            <img
+              src="https://m.media-amazon.com/images/I/71mgX2K40lL.jpg"
+              alt="GodfatherII"
+              width="150"
+              height="225"
+              id="70classic11"
+              data-id=""
+              data-identifier="The Godfather Part II"
+              onclick="clickedImage(id)"
+          /></a>
+           <a>
+            <img
+              src="https://m.media-amazon.com/images/I/612g2iBEWmL._AC_UF894,1000_QL80_.jpg"
+              alt="Cuckoo"
+              width="150"
+              height="225"
+              id="70classic12"
+              data-id=""
+              data-identifier="One Flew Over The Cuckoo's Nest"
+              onclick="clickedImage(id)"
+          /></a>           
+          <a>
+            <img
+              src="https://cdn.shopify.com/s/files/1/1057/4964/products/mad-max-vintage-movie-poster-original-40x60.jpg?v=1614315705"
+              alt="MadMax"
+              width="150"
+              height="225"
+              id="70classic13"
+              data-id=""
+              data-identifier="Mad Max"
+              onclick="clickedImage(id)"
+          /></a>
+           <a>
+            <img
+              src="https://m.media-amazon.com/images/I/51LnXYQ66YL._AC_UF894,1000_QL80_.jpg"
+              alt="Young Frankenstein"
+              width="150"
+              height="225"
+              id="70classic14"
+              data-id=""
+              data-identifier="Young Frankenstein"
+              onclick="clickedImage(id)"
+          /></a>
+           <a>
+            <img
+              src="https://m.media-amazon.com/images/M/MV5BYjUwMzhkM2ItMTU2OC00OTQ5LWJlMDUtMzRmYjc0NDUyNGVhL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg"
+              alt="Robin Hood"
+              width="150"
+              height="225"
+              id="70classic15"
+              data-id=""
+              data-identifier="Robin Hood"
+              onclick="clickedImage(id)"
+          /></a>
+           <a>
+            <img
+              src="https://m.media-amazon.com/images/I/713+XfLZXyL.jpg"
+              alt="Sat Night Fever"
+              width="150"
+              height="225"
+              id="70classic16"
+              data-id=""
+              data-identifier="Saturday Night Fever"
+              onclick="clickedImage(id)"
+          /></a>
+           <a>
+            <img
+              src="https://m.media-amazon.com/images/M/MV5BZDJhOTgyMTUtMDVhOS00MzRlLTk0MjYtYjI5NzhhMTExMTc1XkEyXkFqcGdeQXVyNDY2MTk1ODk@._V1_.jpg"
+              alt="Spy Who Loved Me"
+              width="150"
+              height="225"
+              id="70classic17"
+              data-id=""
+              data-identifier="The Spy Who Loved Me"
+              onclick="clickedImage(id)"
+          /></a>
+        </div>
+      </div>
+        <br />
+
+        <!-- 80s Movies -->
+        <b>80s Movies</b><br />
+        <div class="outer-wrapper">
+         <div class="inner-wrapper">
+          <a>
+            <img
+              src="https://m.media-amazon.com/images/M/MV5BMDA0NjZhZWUtNmI2NC00MmFjLTgwZDYtYzVjZmNhMDVmOTBkXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg"
+              alt="Bueller"
+              width="150"
+              height="225"
+              id="80classic1"
+              data-id="9377"
+              data-identifier="Ferris Bueller"
+              onclick="clickedImage(id)"
+          /></a>
+          <a>
+            <img
+              src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/51EfYxATiOL._AC_UF894,1000_QL80_.jpg"
+              alt="Spaceballs"
+              width="150"
+              height="225"
+              id="80classic2"
+              data-id="957"
+              data-identifier="Spaceballs"
+              onclick="clickedImage(id)"
+          /></a>
+          <a>
+            <img
+              src="https://m.media-amazon.com/images/I/516steLXBbL._AC_UF894,1000_QL80_.jpg"
+              alt="Breakfast Club"
+              width="150"
+              height="225"
+              id="80classic3"
+              data-id="2108"
+              data-identifier="The Breakfast Club"
+              onclick="clickedImage(id)"
+          /></a>
+          <a>
+            <img
+              src="https://m.media-amazon.com/images/I/51g-8R5FOhL._AC_UF894,1000_QL80_.jpg"
+              alt="Shining"
+              width="150"
+              height="225"
+              id="80classic4"
+              data-id="694"
+              data-identifier="The Shining"
+              onclick="clickedImage(id)"
+          /></a>
+          <a>
+            <img
+              src="https://i.ebayimg.com/images/g/~OMAAOSwHLJZik7~/s-l1600.jpg"
+              alt="Indiana Jones"
+              width="150"
+              height="225"
+              id="80classic5"
+              data-id="85"
+              data-identifier="Raiders of the Lost Ark"
+              onclick="clickedImage(id)"
+          /></a>
+          <a>
+            <img
+              src="https://m.media-amazon.com/images/I/51SZWGvaV5L._AC_UF894,1000_QL80_.jpg"
+              alt="Scarface"
+              width="150"
+              height="225"
+              id="80classic6"
+              data-id="111"
+              data-identifier="Scarface"
+              onclick="clickedImage(id)"
+          /></a>
+          <a>
+            <img
+              src="https://m.media-amazon.com/images/M/MV5BZjQxYTA3ODItNzgxMy00N2Y2LWJlZGMtMTRlM2JkZjI1ZDhhXkEyXkFqcGdeQXVyNDk3NzU2MTQ@._V1_FMjpg_UX1000_.jpg"
+              alt="TopGun"
+              width="150"
+              height="225"
+              id="80classic7"
+              data-id="744"
+              data-identifier="Top Gun"
+              onclick="clickedImage(id)"
+          /></a>
+          <a>
+            <img
+              src="https://i.pinimg.com/564x/98/f4/19/98f419b01b9c3d669c860931c37b7e91.jpg"
+              alt="Princess Bride"
+              width="150"
+              height="225"
+              id="80classic8"
+              data-id="2493"
+              data-identifier="The Princess Bride"
+              onclick="clickedImage(id)"
+          /></a>
+          <a>
+            <img
+              src="https://cdn.shopify.com/s/files/1/0057/3728/3618/products/cedcf0e4209895fce418196e333507ad_54154c41-79c2-4688-93e6-88283b8cfd36_500x.jpg?v=1573592554"
+              alt="Ghostbusters"
+              width="150"
+              height="225"
+              id="80classic9"
+              data-id="620"
+              data-identifier="Ghostbusters"
+              onclick="clickedImage(id)"
+          /></a>
+          <a>
+            <img
+              src="https://dyn1.heritagestatic.com/lf?set=path%5B1%2F4%2F8%2F4%2F4%2F14844818%5D&call=url%5Bfile%3Aproduct.chain%5D"
+              alt="ET"
+              width="150"
+              height="225"
+              id="80classic10"
+              data-id="601"
+              data-identifier="E.T."
+              onclick="clickedImage(id)"
+          /></a>
+          <a>
+            <img
+              src="https://i5.walmartimages.com/asr/3b7a9864-9ae6-4573-9a86-8c3c11c6f5b2_1.9ce8a10e24079a2b7cba04138394a169.jpeg"
+              alt="Goonies"
+              width="150"
+              height="225"
+              id="80classic11"
+              data-id="9340"
+              data-identifier="Goonies"
+              onclick="clickedImage(id)"
+          /></a>
+          <a>
+            <img
+              src="https://i.ebayimg.com/images/g/-i8AAOSwAa9h0Ole/s-l1600.jpg"
+              alt="Batman"
+              width="150"
+              height="225"
+              id="80classic12"
+              data-id="268"
+              data-identifier="Batman"
+              onclick="clickedImage(id)"
+          /></a>
+          <a>
+            <img
+              src="https://i5.walmartimages.com/asr/1170a9ee-decd-4c51-85b1-4ac4e66b9d3c_1.069e3a9e7bc91124ab99d28624b18334.jpeg"
+              alt="The Karate Kid"
+              width="150"
+              height="225"
+              id="80classic13"
+              data-id="1885"
+              data-identifier="The Karate Kid"
+              onclick="clickedImage(id)"
+          /></a>
+          <a>
+            <img
+              src="https://i.ebayimg.com/images/g/Y-MAAOSwXylhBhwk/s-l500.jpg"
+              alt="Gremlins"
+              width="150"
+              height="225"
+              id="80classic14"
+              data-id="927"
+              data-identifier="Gremlins"
+              onclick="clickedImage(id)"
+          /></a>
+          <a>
+            <img
+              src="https://image.tmdb.org/t/p/original/aOfs81eNt5dM6qsQOUYEs31aJ6h.jpg"
+              alt="Honey I Shrunk the Kids"
+              width="150"
+              height="225"
+              id="80classic15"
+              data-id="9354"
+              data-identifier="Honey I Shrunk the Kids"
+              onclick="clickedImage(id)"
+          /></a>
+        </div>
+      </div>
+        <br />
+
+        <!-- 90s Movies -->
+        <b>90s Movies</b><br />
+        <div class="outer-wrapper">
+         <div class="inner-wrapper">
+          <a>
+            <img
+              src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/91WlTjCgu4L.jpg"
+              alt="Titanic"
+              width="150"
+              height="225"
+              id="90classic1"
+              data-id="597"
+              data-identifier="Titanic"
+              onclick="clickedImage(id)"
+          /></a>
+          <a>
+            <img
+              src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/7114ViRptyL.jpg"
+              alt="Scream"
+              width="150"
+              height="225"
+              id="90classic2"
+              data-id="4232"
+              data-identifier="Scream"
+              onclick="clickedImage(id)"
+          /></a>
+          <a>
+            <img
+              src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/71JxA6I+sgL._AC_UF894,1000_QL80_.jpg"
+              alt="The Shawshank Redemption"
+              width="150"
+              height="225"
+              id="90classic3"
+              data-id="278"
+              data-identifier="The Shawshank Redemption"
+              onclick="clickedImage(id)"
+          /></a>
+          <a>
+            <img
+              src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/81D+KJkO4SL.jpg"
+              alt="Fight Club"
+              width="150"
+              height="225"
+              id="90classic4"
+              data-id="550"
+              data-identifier="Fight Club"
+              onclick="clickedImage(id)"
+          /></a>
+          <a>
+            <img
+              src="https://cdn.shopify.com/s/files/1/1416/8662/products/forrest_gump_1994_original_film_art_30259e91-c10e-4c25-a178-182785092a3b_600x.jpg?v=1678130507"
+              alt="Forrest Gump"
+              width="150"
+              height="225"
+              id="90classic5"
+              data-id="13"
+              data-identifier="Forrest Gump"
+              onclick="clickedImage(id)"
+          /></a>
+          <a>
+            <img
+              src="https://cdn.shopify.com/s/files/1/1057/4964/products/Pulp-Fiction-Vintage-Movie-Poster-Original-1-Sheet-27x41-6_300x@2x.jpg?v=1669266071"
+              alt="Pulp Fiction"
+              width="150"
+              height="225"
+              id="90classic6"
+              data-id="680"
+              data-identifier="Pulp Fiction"
+              onclick="clickedImage(id)"
+          /></a>
+          <a>
+            <img
+              src="https://cdn.shopify.com/s/files/1/1416/8662/products/the_matrix_1999_bus_stop_original_film_art.jpg?v=1593131403"
+              alt="The Matrix"
+              width="150"
+              height="225"
+              id="90classic7"
+              data-id="603"
+              data-identifier="The Matrix"
+              onclick="clickedImage(id)"
+          /></a>
+          <a>
+            <img
+              src="https://cdn.shopify.com/s/files/1/1057/4964/products/The-Lion-King-Vintage-Movie-Poster-Original-1-Sheet-27x41_3ef4a76c-499a-4d4b-97a1-eff838a1f50a.jpg?v=1663223295"
+              alt="Lion King"
+              width="150"
+              height="225"
+              id="90classic8"
+              data-id="8587"
+              data-identifier="The Lion King"
+              onclick="clickedImage(id)"
+          /></a>
+          <a>
+            <img
+              src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/61fExTEY7dL.jpg"
+              alt="Jurassic Park"
+              width="150"
+              height="225"
+              id="90classic9"
+              data-id="329"
+              data-identifier="Jurassic Park"
+              onclick="clickedImage(id)"
+          /></a>
+          <a>
+            <img
+              src="https://lumiere-a.akamaihd.net/v1/images/p_toystory_19639_424d94a0.jpeg"
+              alt="Toy Story"
+              width="150"
+              height="225"
+              id="90classic10"
+              data-id="862"
+              data-identifier="Toy Story"
+              onclick="clickedImage(id)"
+          /></a>
+          <a>
+            <img
+              src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/618Uf1CmV4L._AC_UF894,1000_QL80_.jpg"
+              alt="Men in Black"
+              width="150"
+              height="225"
+              id="90classic11"
+              data-id="607"
+              data-identifier="Men in Black"
+              onclick="clickedImage(id)"
+          /></a>
+          <a>
+            <img
+              src="https://i.ebayimg.com/images/g/2OYAAOSw509drpiV/s-l1600.jpg"
+              alt="The Mummy"
+              width="150"
+              height="225"
+              id="90classic12"
+              data-id="564"
+              data-identifier="The Mummy"
+              onclick="clickedImage(id)"
+          /></a>
+          <a>
+            <img
+              src="https://i.ebayimg.com/images/g/kQAAAOSwBP1iN5iG/s-l500.jpg"
+              alt="Goodfellas"
+              width="150"
+              height="225"
+              id="90classic13"
+              data-id="769"
+              data-identifier="Goodfellas"
+              onclick="clickedImage(id)"
+          /></a>
+          <a>
+            <img
+              src="https://m.media-amazon.com/images/M/MV5BOWExYjI5MzktNTRhNi00Nzg2LThkZmQtYWVkYjRlYWI2MDQ4XkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_.jpg"
+              alt="The Mask"
+              width="150"
+              height="225"
+              id="90classic14"
+              data-id="854"
+              data-identifier="The Mask"
+              onclick="clickedImage(id)"
+          /></a>
+          <a>
+            <img
+              src="https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T1/images/I/51O4Ot2LpdL._AC_UF894,1000_QL80_.jpg"
+              alt="Jumanji"
+              width="150"
+              height="225"
+              id="90classic15"
+              data-id="8844"
+              data-identifier="Jumanji"
+              onclick="clickedImage(id)"
+          /></a>
+         </div>
+        </div>
+        <div class="pseduo-track"></div>
+        <br />
+      </div>
+    </div>
+  </div>
+  <h5 style="color: white; margin-left: 39%;">Copyright 2023, CSE 201 Team 4</h5>
+      <img
+        src="https://www.themoviedb.org/assets/2/v4/logos/v2/blue_short-8e7b30f73a4020692ccca9c88bafe5dcb6f8a62a4c6bc55cd9ba82bb2cd95f6c.svg"
+        alt="TMDB logo"
+        id="tmdb_logo"
+        style="height: 30px; margin-left: 40%; margin-bottom: 10px;"
+      />
+  <script>
+      document.getElementById('logo').onclick = function(){window.open(index.html)};
+    </script>
+  </body>
+</html>

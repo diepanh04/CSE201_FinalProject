@@ -55,3 +55,29 @@ function storeItem() {
 }
 
 // html block for individual movie
+// <div class="col">
+//             <figure class="figure">
+//               <img
+//                 src="https://png.pngtree.com/background/20210715/original/pngtree-double-row-tree-path-with-yellow-deciduous-autumn-leaves-picture-image_1293368.jpg"
+//                 class="figure-img img-fluid rounded"
+//                 alt="pic1"
+//                 id="pic1"
+//                 data-identifier=""
+//                 onclick="clickedImage(id)"
+//               />
+//               <button type="button" class="btn btn-warning btn-small" onclick="saveMovie(this)">
+//                 Save to WatchList
+//               </button>
+//             </figure>
+//           </div>
+const movieId = 1;
+
+function movieContainer() {
+  const container = document.createElement('div');
+  container.classList.add('col');
+  const img = document.createElement('img');
+  img.src = 'https://png.pngtree.com/background/20210715/original/pngtree-double-row-tree-path-with-yellow-deciduous-autumn-leaves-picture-image_1293368.jpg';
+  img.classList.add('figure-img', 'img-fluid rounded');
+  img.id = 'pic' + movieId++;
+  const button = document.createElement('button');
+}
